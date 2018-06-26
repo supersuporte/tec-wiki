@@ -1,0 +1,15 @@
+select status,object_name
+from user_objects
+where object_type in ('PROCEDURE','FUNCTION')
+ORDER BY 1;
+
+
+
+--------------------------------------------------
+Permitir que a trigger selecione a própria tabela:
+PRAGMA TRANSACTION
+
+--------------------------------------------------
+
+luiseduardor@hotmail.com
+andre.frogeri@gmail.com

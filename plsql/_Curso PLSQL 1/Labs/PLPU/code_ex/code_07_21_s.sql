@@ -1,0 +1,11 @@
+REM THIS IS A NON EXECECUTABLE CODE; 
+REM TO EXECUTE THIS PROGRAM REPLACE THE ELLIPSES WITH PROPER CODE
+DECLARE
+  TYPE emptabtype IS TABLE OF employees%ROWTYPE;
+  emp_tab emptabtype;
+  PROCEDURE populate(tab IN OUT NOCOPY emptabtype) IS
+  BEGIN ... END;
+BEGIN
+  populate(emp_tab);
+END;
+/

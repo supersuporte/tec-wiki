@@ -1,0 +1,81 @@
+Examples of Calendaring Expressions
+-----------------------------------
+
+The following examples illustrate simple repeat intervals. For simplicity, it is assumed that there is no contribution to the evaluation results by the start date.
+
+Run every Friday. (All three examples are equivalent.)
+
+FREQ=DAILY; BYDAY=FRI;
+FREQ=WEEKLY; BYDAY=FRI;
+FREQ=YEARLY; BYDAY=FRI;
+
+Run every other Friday.
+
+FREQ=WEEKLY; INTERVAL=2; BYDAY=FRI;
+
+Run on the last day of every month.
+
+FREQ=MONTHLY; BYMONTHDAY=-1;
+
+Run on the next to last day of every month.
+
+FREQ=MONTHLY; BYMONTHDAY=-2;
+
+Run on March 10th. (Both examples are equivalent)
+
+FREQ=YEARLY; BYMONTH=MAR; BYMONTHDAY=10;
+FREQ=YEARLY; BYDATE=0310;
+
+Run every 10 days.
+
+FREQ=DAILY; INTERVAL=10;
+
+Run daily at 4, 5, and 6PM.
+
+FREQ=DAILY; BYHOUR=16,17,18;
+
+Run on the 15th day of every other month.
+
+FREQ=MONTHLY; INTERVAL=2; BYMONTHDAY=15;
+
+Run on the 29th day of every month.
+
+FREQ=MONTHLY; BYMONTHDAY=29;
+
+Run on the second Wednesday of each month.
+
+FREQ=MONTHLY; BYDAY=2WED;
+
+Run on the last Friday of the year.
+
+FREQ=YEARLY; BYDAY=-1FRI;
+
+Run every 50 hours.
+
+FREQ=HOURLY; INTERVAL=50;
+
+Run on the last day of every other month.
+
+FREQ=MONTHLY; INTERVAL=2; BYMONTHDAY=-1;
+
+Run hourly for the first three days of every month.
+
+FREQ=HOURLY; BYMONTHDAY=1,2,3;
+
+Here are some more complex repeat intervals:
+
+Run on the last workday of every month (assuming that workdays are Monday through Friday).
+
+FREQ=MONTHLY; BYDAY=MON,TUE,WED,THU,FRI; BYSETPOS=-1
+
+Run on the last workday of every month, excluding company holidays. (This example references an existing named schedule called Company_Holidays.)
+
+FREQ=MONTHLY; BYDAY=MON,TUE,WED,THU,FRI; EXCLUDE=Company_Holidays; BYSETPOS=-1
+
+Run at noon every Friday and on company holidays.
+
+FREQ=YEARLY;BYDAY=FRI;BYHOUR=12;INCLUDE=Company_Holidays
+
+Run on these three holidays: July 4th, Memorial Day, and Labor Day. (This example references three existing named schedules—JUL4, MEM, and LAB—where each defines a single date corresponding to a holiday.)
+
+JUL4,MEM,LAB

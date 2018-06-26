@@ -1,0 +1,9 @@
+CREATE OR REPLACE PROCEDURE APAGA(p_tab VARCHAR2) IS
+v_texto VARCHAR2(100);
+
+BEGIN
+  v_texto := 'DELETE ' || p_tab;
+  EXECUTE IMMEDIATE v_texto;
+  
+END;
+/

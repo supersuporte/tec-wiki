@@ -1,0 +1,6 @@
+CREATE OR REPLACE PACKAGE curs_pkg IS
+  PROCEDURE open;
+  FUNCTION next(n NUMBER := 1) RETURN BOOLEAN;
+  PROCEDURE close;
+END curs_pkg;
+/
