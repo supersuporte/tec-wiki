@@ -1,0 +1,66 @@
+01 - Alterar todos os descritivos para Ingles
+02 - Alterar o nome da aplicacao de Sherwin-Auto para SWMR
+03 - Alterar a imagem de background da tela de login
+04 - Alterar o logotipo imagem da Sherwin Williams Automotive Finishes para Sherwin Williams
+05 - Colocar o nome do usuario logado no sistema
+06 - Quando entrar no sistema, nao mostrar mais o relatorio de Saldo de Pedidos diretamente.
+07 - Menu
+
+	Services - Product/Line Availability
+	         - Order Completness
+        Cost
+	Quality
+	Security
+	People
+
+08 - Product/ Line Avaibility
+
+     - Tirar a opcao de Intercompany
+	 - Filtrar por mes/ano inicio e mes/ano fim
+     - Se mes/ano inicio = mes/ano fim mostrar grafico por dia
+	 - Se mes/ano inicio <> mes/ano fim mostrar grafico por mes
+
+	 - Classificacao
+
+                                   Sent         Baixados       Percentual	   
+		   Product Availability    Galao        Galao          Disponibilidade
+		   Line    Availability    Quantidade   Quantidade     Disponibilidade
+		   Total                                               Disponibilidade
+
+		   O mesmo para o Acumulado do Periodo
+
+           Bloquear um periodo inicial
+
+           Quando clicar no Percentual de Disponibilidade, mostrar um popup com Numero do Pedido, Produto, Descricao do Produto, Quantidade
+
+     - Grafico
+
+	       Grafico por disponibilidade
+
+
+09 - Order Completness
+
+	 - Filtrar por mes/ano inicio e mes/ano fim
+     - Se mes/ano inicio = mes/ano fim mostrar grafico por dia
+	 - Se mes/ano inicio <> mes/ano fim mostrar grafico por mes
+
+	 - Classificacao
+
+                          Sent        Atendido    Nao Atendido     Percentual	   
+		   Quantidade     Quantidade  Quantidade  Quantidade       Percentual
+
+		   O mesmo para o Acumulado do Periodo
+
+           Bloquear um periodo inicial
+
+           Quando clicar no Percentual, mostrar um popup com Numero do Pedido, Produto, Descricao do Produto, Quantidade
+
+     - Grafico
+
+	       Grafico por Percentual
+	 
+
+
+
+
+
