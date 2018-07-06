@@ -1,0 +1,1 @@
+git config --global http.proxy http://username:senha@proxy.servername.com.br:80
